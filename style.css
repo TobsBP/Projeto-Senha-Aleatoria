@@ -1,0 +1,110 @@
+* {
+  font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  max-width: 600px;
+  margin-bottom: 14px;
+}
+
+.container-input {
+  max-width: 400px;
+  margin: 14px 0;
+}
+
+.container-input span{
+  color: white;
+  font-size: 22px;
+}
+
+.slider {
+  width: 100%;
+  border-radius: 5px;
+  background-color: azure;
+  height: 18px;
+  outline: none;
+  margin-top: 8px;
+}
+
+.button-cta {
+  height: 40px;
+  background-color: green;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container-password {
+  max-width: 480px;
+  margin: 14px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.your-pass {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password {
+  height: 60px;
+  background-color: rgba(59, 59, 59, 0.4);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid #313131;
+  transition: transform 0.5s;
+}
+
+.password:hover {
+  transform: scale(1.05);
+}
+
+.tool-tip {
+  color: white;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  background: rgb(15,15,15);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tool-tip{
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
